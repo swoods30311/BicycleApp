@@ -4,6 +4,12 @@ class Bicycle {
     int speed = 0;
     int gear = 1;
 
+    public Bicycle(int startCadence, int startSpeed, int startGear) {
+        gear = startGear;
+        cadence = startCadence;
+        speed = startSpeed;
+    }
+
     void changeCadence(int newValue) {
         cadence = newValue;
     }
