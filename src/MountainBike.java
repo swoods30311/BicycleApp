@@ -22,7 +22,7 @@ public class MountainBike extends Bicycle {
 
     public void printDescription() {
         super.printDescription();
-        System.out.println("The " + "MountainBike has a" +
+        System.out.println("The " + "MountainBike has a " +
                 getSuspension() + " suspension.");
     }
 }
