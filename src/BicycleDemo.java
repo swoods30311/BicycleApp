@@ -1,22 +1,14 @@
 class BicycleDemo {
     public static void main(String[] args) {
 
-        // Create two different 
-        // Bicycle objects
-        Bicycle bike1 = new Bicycle(8,90,3);
-        Bicycle bike2 = new Bicycle(10,72,5);
+        Bicycle bike01, bike02, bike03;
 
-        // Invoke methods on 
-        // those objects
-        bike1.changeCadence(50);
-        bike1.speedUp(10);
-        bike1.changeGear(2);
-        bike1.printStates();
+        bike01 = new Bicycle(20, 10, 1);
+        bike02 = new MountainBike(20, 10, 5, "Dual");
+        bike03 = new RoadBike(40, 20, 8, 23);
 
-        bike2.changeCadence(50);
-        bike2.speedUp(10);
-        bike2.changeGear(2);
-
-        bike2.printStates();
+        bike01.printDescription();
+        bike02.printDescription();
+        bike03.printDescription();
     }
 }
